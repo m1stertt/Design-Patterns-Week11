@@ -4,7 +4,7 @@ import be.Message;
 
 import java.util.List;
 
-public interface IDAOFacade {
+public interface IDAO {
 
     List<Message> getAllMessages();
 

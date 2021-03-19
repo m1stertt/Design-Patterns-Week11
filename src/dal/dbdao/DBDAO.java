@@ -1,7 +1,7 @@
 package dal.dbdao;
 
 import be.Message;
-import dal.IDAOFacade;
+import dal.IDAO;
 import javafx.collections.FXCollections;
 
 import java.sql.Connection;
@@ -10,16 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class DBDAO implements IDAOFacade {
-
-    private static DBDAO dbdao = new DBDAO();
-
-    public static DBDAO getInstance(){
-        return dbdao;
-    }
-
-    private DBDAO() {
-    }
+public class DBDAO implements IDAO {
 
     private DBConnector dataSource = new DBConnector();
 

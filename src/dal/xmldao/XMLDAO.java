@@ -1,20 +1,11 @@
 package dal.xmldao;
 
 import be.Message;
-import dal.IDAOFacade;
+import dal.IDAO;
 
 import java.util.List;
 
-public class XMLDAO implements IDAOFacade {
-
-    private static XMLDAO xmldao = new XMLDAO();
-
-    public static XMLDAO getInstance(){
-        return xmldao;
-    }
-
-    private XMLDAO() {
-    }
+public class XMLDAO implements IDAO {
 
     @Override
     public List<Message> getAllMessages() {
@@ -23,6 +14,6 @@ public class XMLDAO implements IDAOFacade {
 
     @Override
     public void logMessage(Message message) {
-
+        return;
     }
 }
